@@ -13,3 +13,5 @@ CPA_3xxx_Modbus: Serial port example using Modbus that is compatible with CPA3.x
 CPA_3xxx_ModbusTCP: Ethernet example using ModbusTCP that is compatible with CPA3.xxx model compressors only.
 
 AutomaticPurifier_ModbusTCP: Ethernet example using ModbusTCP to get an Automatic Purifier's status. This works with systems running firmware rev 22 or newer.
+
+LHeP_ModbusTCP: Ehernet example using ModbusTCP to monitor the status of an LHeP system
