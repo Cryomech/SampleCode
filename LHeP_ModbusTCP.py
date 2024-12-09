@@ -51,7 +51,7 @@ def FloatToString(theNumber, digitsRightOfDecimal):
 
 
 def buildOperatingMode(stateNumber):
-    strReturn = 'Unknown State: ' + str(stateNumber)
+        strReturn = 'Unknown State: ' + str(stateNumber)
     if 0 == stateNumber:
         strReturn = 'Off'
     elif 3 == stateNumber:
@@ -67,18 +67,21 @@ def buildOperatingMode(stateNumber):
     elif 22 == stateNumber:
         strReturn = 'Fault: Compressor Comms Partial Loss'
     elif 23 == stateNumber:
-        strReturn = 'Fault: Default Compressor ON'
-    elif 24 == stateNumber:
         strReturn = 'Fault: Single Head Compressor Regulated, Assumed Full'
-    elif 25 == stateNumber:
+    elif 24 == stateNumber:
         strReturn = 'Fault: Single Head Heater Regulated, Assumed Full'
-    elif 26 == stateNumber:
-        strReturn = 'Fault: Single Head Manual, Assumed Full'
-    elif 27 == stateNumber:
+    elif 25 == stateNumber:
         strReturn = 'Fault: Single Head Forced Compressor Regulation'
-    elif 28 == stateNumber:
+    elif 26 == stateNumber:
         strReturn = 'Fault: Cryo-Temp Based Regulation'
+    elif 27 == stateNumber:
+        strReturn = 'Fault: Multi Head Assumed Full'
+    elif 28 == stateNumber:
+        strReturn = 'Fault: Multi Head Compressor Regulation'
+    elif 29 == stateNumber:
+        strReturn = 'Fault: Vacuum Present'
     return strReturn 
+
 
 def bytesToFeedback(theBytes):
     g_txtFeedback.insert(INSERT, bytes.hex(theBytes))
