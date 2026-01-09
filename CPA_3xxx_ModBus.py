@@ -1,3 +1,4 @@
+# ----  you will need to install the pyserial module ----
 import serial
 import serial.tools.list_ports
 import struct
@@ -418,3 +419,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
